@@ -81,6 +81,8 @@ def custom(path_or_model='path/to/model.pt', autoshape=True):
 def yolov7(pretrained=True, channels=3, classes=80, autoshape=True):
     return create('yolov7', pretrained, channels, classes, autoshape)
 
+def yolov7w6(pretrained=True, channels=3, classes=80, autoshape=True):
+    return create('yolov7-w6', pretrained, channels, classes, autoshape)
 
 if __name__ == '__main__':
     model = custom(path_or_model='yolov7.pt')  # custom example
