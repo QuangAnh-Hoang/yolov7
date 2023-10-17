@@ -50,6 +50,7 @@ def create(name, pretrained, channels, classes, autoshape):
         return model.to(device)
 
     except Exception as e:
+        print(e)
         s = 'Cache maybe be out of date, try force_reload=True.'
         raise Exception(s) from e
 
